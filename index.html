@@ -36,6 +36,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
     />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
   </head>
 
   <body>
@@ -52,22 +54,22 @@
           </li>
 
           <li>
-            <a href="#">About</a>
+            <a href="#" class="scroll">About</a>
           </li>
           <li>
-            <a href="#">Research Projects</a>
+            <a href="#Projects" class="scroll">Research Projects</a>
           </li>
           <li>
-            <a href="#">Publication</a>
+            <a href="#Publication" class="scroll">Publication</a>
           </li>
           <li>
-            <a href="#">Intellectual Properties</a>
+            <a href="#IP" class="scroll">Intellectual Properties</a>
           </li>
           <li>
-            <a href="#">Awards</a>
+            <a href="#Awards" class="scroll">Awards</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#Skills" class="scroll">Skills</a>
           </li>
         </ul>
       </nav>
@@ -92,14 +94,6 @@
             >
               <i class="fas fa-align-justify"></i>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Page</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </nav>
 
@@ -439,6 +433,17 @@
           $("a[aria-expanded=true]").attr("aria-expanded", "false");
         });
       });
+    </script>
+
+    <!-- Scroll -->
+    <script>
+      $("#sidebar ul li a").on('click', function(){
+        var targetHash = #(this).attr("id");
+        var headerHeight = $('header').outerHeight();
+        $("body").animate({
+          scrollTop : $(targetHash).offset().top - headerHeight
+        },400)
+        });
     </script>
   </body>
 </html>
