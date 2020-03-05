@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Bootstrap CSS -->
+    <title>Jaeyeol Song Portfolio</title>
+
+    <!-- Bootstrap CSS CDN -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
       crossorigin="anonymous"
     />
+    <link href="css/main.css" rel="stylesheet" />
 
-    <!-- Scrollbar Custom CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
-    />
     <!-- Font Awesome JS -->
     <script
       defer
@@ -33,15 +31,19 @@
       crossorigin="anonymous"
     ></script>
 
-    <link href="css/main.css" rel="stylesheet" />
-
-    <title>Jaeyeol Song portfolio</title>
+    <!-- Scrollbar Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
   </head>
+
   <body>
     <div class="wrapper">
+      <!-- Sidebar  -->
       <nav id="sidebar">
         <div class="sidebar-header">
-          <h3>Portfolio</h3>
+          <h3>Jaeyeol</h3>
         </div>
 
         <ul class="list-unstyled components">
@@ -69,7 +71,38 @@
           </li>
         </ul>
       </nav>
+
+      <!-- Page Content  -->
       <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left"></i>
+              <span>Toggle Sidebar</span>
+            </button>
+
+            <button
+              class="btn btn-dark d-inline-block d-lg-none ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Page</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
         <h1>Hi!</h1>
         <h1>I'm Jaeyeol Song</h1>
         <br />
@@ -84,31 +117,32 @@
           <ul>
             <li>
               실내이미지의 객체 및 스타일 기계학습을 통한 인공지능 학습모델
-              개발과 실내디자인 활용 PI: 이진국, 한국연구재단, 2019 ~ 2020
+              개발과 실내디자인 활용, 한국연구재단, 2019 ~ 2020
             </li>
             <li>
               건물정보모델링기반 설계자동화 및 검토지능화를 위한 인공지능과
-              실감미디어연계 설계기술 개발 Pl: 이진국, 한국연구재단, 2019 ~ 2020
+              실감미디어연계 설계기술 개발, 한국연구재단, 2019 ~ 2020
             </li>
             <li>
-              인공지능 기반의 건축설계 자동화기술개발, PI 경북대 추승연,
-              국토교통부, 2018 ~2019
+              인공지능 기반의 건축설계 자동화기술개발, 국토교통부, 2018 ~2019
             </li>
             <li>
               실내건축 4.0: BIM과 딥러닝 활용 디지털 융합디자인 연구, 연세대
-              미래선도연구사업, PI: 연세대 이진국 2018.05 ~ 2020
+              미래선도연구사업, 2018.05 ~ 2020
             </li>
             <li>
               개방형BIM 기반의 건축설계 자동화지원 기술 및 첨단 유지관리
-              기반기술 개발, PI: 경희대 김인한, 국토교통부, 2017 ~ 2020
+              기반기술 개발, 국토교통부, 2017 ~ 2020
             </li>
             <li>
               BIM기반 건축디자인 자동검토를 위한 각종 품질항목의 논리규칙 체계화
-              및 비주얼랭귀지 개발, PI: 연세대 이진국, 과학기술정보통신부, 2017.
-              01 ~ 2018. 10
+              및 비주얼랭귀지 개발, 과학기술정보통신부, 2017. 01 ~ 2018. 10
             </li>
           </ul>
         </div>
+
+        <div class="line"></div>
+
         <div id="Publication" style="padding-top: 20px;">
           <h3>
             Publication
@@ -132,13 +166,14 @@
             <li>
               이상훈, 김진성, <u>송재열</u>, 이진국 “디자인 초기 현장 시각화를
               위한 증강현실기반 접근방법 - 대학교 학술정보관 공간개선 디자인 안
-              예시를 중심으로 -”, 한국 실내디자인학회 논문집, 심사중
+              예시를 중심으로 -”, 한국실내디자인학회 논문집,Vol.29 No.1(통권
+              138호) (2020-02)
             </li>
             <li>
               <u>송재열</u>, 이진국 “공간정보 학습모델기반 지능형 실내 설계
               자동화 접근방법 - 인공지능기술 활용 천장 조명객체 자동생성
               플러그인 개발 사례를 중심으로 -”, 한국 실내디자인학회 논문집,
-              심사중
+              4월호 게재예정
             </li>
             <li>
               <u>송재열</u>, 이진국 "BIM기반 설계품질 자동검토를 위한 워드임베딩
@@ -157,11 +192,11 @@
           </h5>
           <ul>
             <li>
-              <u>Jaeyeol Song</u>, Jinsung Kim and Jin-Kook Lee, "CONVERTING
-              KBIMCODE INTO AN EXECUTABLE CODE FOR THE AUTOMATED DESIGN RULE
-              CHECKING SYSTEM", Proceedings of the 24th Annual Conference of the
-              Association for Computer-Aided Architectural Design Research in
-              Asia (CAADRIA 2019), Volume 1, pp. 795-804
+              <u>Jaeyeol Song</u>, Jinsung Kim and Jin-Kook Lee, "Preliminary
+              Test to Translate KBimCode Statements into Executable Code for
+              Automated Rule Checking", Proceedings of International Congress
+              and Conferences on Computational Design and Engineering (i3CDE
+              2019), Penang, Malaysia, July 2019, pp. 140-141
             </li>
             <li>
               Jinsung Kim, <u>Jaeyeol Song</u> and Jin-Kook Lee, "APPROACH TO
@@ -290,6 +325,8 @@
             </li>
           </ul>
         </div>
+        <div class="line"></div>
+
         <div id="IP" style="padding-top: 20px;">
           <h3>
             Intellectual Properties
@@ -332,6 +369,8 @@
             </li>
           </ul>
         </div>
+        <div class="line"></div>
+
         <div id="Awards" style="padding-top: 20px;">
           <h3>
             Awards lists
